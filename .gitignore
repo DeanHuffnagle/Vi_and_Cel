@@ -1,3 +1,57 @@
-# Godot 4+ specific ignores
+# ==========================================
+# Godot Engine Core Ignores
+# ==========================================
+# Godot 4.x cache, local settings, and imported binaries
 .godot/
-/android/
+
+# Godot 3.x cache and imported binaries
+.import/
+
+# Prevent folder indexing issues on mobile/web systems
+.nomedia
+
+# Temporary files generated during editor execution
+*.tmp
+
+# Automatically generated translation files
+*.translation
+
+# ==========================================
+# Mono / C# Specific Ignores (If using C#)
+# ==========================================
+.mono/
+data_**/
+mono_crash.*
+*.json
+
+# ==========================================
+# Build & Export Ignores
+# ==========================================
+# Exclude build exports folder (create this folder for your game builds)
+exports/
+build/
+
+# Exclude local editor presets that may contain developer credentials
+export_credentials.cfg
+
+# OPTIONAL: Uncomment the line below if your export presets contain sensitive Android/API keys
+# export_presets.cfg
+
+# ==========================================
+# Common Code Editors & OS Ignores
+# ==========================================
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains (Rider)
+.idea/
+
+# OS Specific
+.DS_Store
+Thumbs.db
